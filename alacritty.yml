@@ -21,6 +21,8 @@ font:
     style: Bold Italic
   size: 11.0
 
+working_directory: D:\\
+
 key_bindings:
   - { key: V,        mods: Control|Shift, action: Paste            }
   - { key: V,        mods: Control,       action: Paste            }
@@ -32,6 +34,7 @@ key_bindings:
   - { key: Plus,     mods: Control,       action: IncreaseFontSize }
   - { key: Minus,    mods: Control,       action: DecreaseFontSize }
   - { key: Key0,     mods: Control,       action: ResetFontSize    }
+
 
 colors:
     # Default colors
