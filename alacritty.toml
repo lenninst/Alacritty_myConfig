@@ -1,149 +1,186 @@
-working_directory = 'D:\\'
+# Directorio de trabajo inicial
+working_directory = "D:\\"
 
-[[colors.indexed_colors]]
-color = "#F5A97F"
-index = 16
+# Configuración de shell
+[shell]
+program = "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+args = ["-NoExit", "-Command", ". $PROFILE"]
 
-[[colors.indexed_colors]]
-color = "#F4DBD6"
-index = 17
-
-[colors.bright]
-black = "#5B6078"
-blue = "#8AADF4"
-cyan = "#8BD5CA"
-green = "#A6DA95"
-magenta = "#F5BDE6"
-red = "#ED8796"
-white = "#A5ADCB"
-yellow = "#EED49F"
-
-[colors.cursor]
-cursor = "#F4DBD6"
-text = "#24273A"
-
-[colors.dim]
-black = "#494D64"
-blue = "#8AADF4"
-cyan = "#8BD5CA"
-green = "#A6DA95"
-magenta = "#F5BDE6"
-red = "#ED8796"
-white = "#B8C0E0"
-yellow = "#EED49F"
-
-[colors.hints.end]
-background = "#A5ADCB"
-foreground = "#24273A"
-
-[colors.hints.start]
-background = "#EED49F"
-foreground = "#24273A"
-
-[colors.normal]
-black = "#494D64"
-blue = "#8AADF4"
-cyan = "#8BD5CA"
-green = "#A6DA95"
-magenta = "#F5BDE6"
-red = "#ED8796"
-white = "#B8C0E0"
-yellow = "#EED49F"
-
-[colors.primary]
-background = "#1a1b26"
-bright_foreground = "#CAD3F5"
-dim_foreground = "#CAD3F5"
-foreground = "#CAD3F5"
-
-[colors.search.focused_match]
-background = "#A6DA95"
-foreground = "#24273A"
-
-[colors.search.matches]
-background = "#A5ADCB"
-foreground = "#24273A"
-
-[colors.selection]
-background = "#F4DBD6"
-text = "#24273A"
-
-[colors.vi_mode_cursor]
-cursor = "#B7BDF8"
-text = "#24273A"
-
+# Configuración de fuentes
 [font]
-size = 10.0
-
-[font.bold]
-family = "JetBrainsMono Nerd Font Mono"
-style = "Bold"
-
-[font.bold_italic]
-family = "FantasqueSansM Nerd Font Mono"
-style = "Bold Italic"
-
-[font.italic]
-family = "JetBrainsMono Nerd Font Mono"
-style = "Italic"
+size = 10.3
 
 [font.normal]
 family = "JetBrainsMono Nerd Font Mono"
 style = "Regular"
 
-[[keyboard.bindings]]
-action = "Paste"
-key = "V"
-mods = "Control|Shift"
+[font.bold]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Bold"
 
+[font.italic]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Italic"
+
+[font.bold_italic]
+family = "FantasqueSansM Nerd Font Mono"
+style = "Bold Italic"
+
+# Configuración para el peso de la fuente
+[font.offset]
+x = 0
+y = 0
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+# Configuración de colores
+[colors.primary]
+background = "#1a1b26"
+foreground = "#CAD3F5"
+dim_foreground = "#CAD3F5"
+bright_foreground = "#CAD3F5"
+
+[colors.cursor]
+text = "#24273A"
+cursor = "#F4DBD6"
+
+[colors.vi_mode_cursor]
+text = "#24273A"
+cursor = "#B7BDF8"
+
+[colors.search.matches]
+foreground = "#24273A"
+background = "#A5ADCB"
+
+[colors.search.focused_match]
+foreground = "#24273A"
+background = "#A6DA95"
+
+[colors.hints.start]
+foreground = "#24273A"
+background = "#EED49F"
+
+[colors.hints.end]
+foreground = "#24273A"
+background = "#A5ADCB"
+
+[colors.selection]
+text = "#24273A"
+background = "#F4DBD6"
+
+[colors.normal]
+black = "#494D64"
+red = "#ED8796"
+green = "#A6DA95"
+yellow = "#EED49F"
+blue = "#8AADF4"
+magenta = "#F5BDE6"
+cyan = "#8BD5CA"
+white = "#B8C0E0"
+
+[colors.bright]
+black = "#5B6078"
+red = "#ED8796"
+green = "#A6DA95"
+yellow = "#EED49F"
+blue = "#8AADF4"
+magenta = "#F5BDE6"
+cyan = "#8BD5CA"
+white = "#A5ADCB"
+
+[colors.dim]
+black = "#494D64"
+red = "#ED8796"
+green = "#A6DA95"
+yellow = "#EED49F"
+blue = "#8AADF4"
+magenta = "#F5BDE6"
+cyan = "#8BD5CA"
+white = "#B8C0E0"
+
+[[colors.indexed_colors]]
+index = 16
+color = "#F5A97F"
+
+[[colors.indexed_colors]]
+index = 17
+color = "#F4DBD6"
+
+# Configuración de atajos de teclado
 [[keyboard.bindings]]
-action = "Paste"
 key = "V"
 mods = "Control"
+action = "Paste"
+
+# [[keyboard.bindings]]
+# key = "C"
+# mods = "Control"
+# action = "Copy"
 
 [[keyboard.bindings]]
-action = "Copy"
+key = "V"
+mods = "Control|Shift"
+action = "Paste"
+
+[[keyboard.bindings]]
 key = "C"
 mods = "Control|Shift"
-
-[[keyboard.bindings]]
 action = "Copy"
-key = "C"
-mods = "Control"
+
+# [[keyboard.bindings]]
+# key = "A"
+# mods = "Control"
+# action = "SelectAll"
 
 [[keyboard.bindings]]
-action = "SpawnNewInstance"
 key = "N"
 mods = "Command"
+action = "SpawnNewInstance"
 
 [[keyboard.bindings]]
-action = "Quit"
 key = "Q"
 mods = "Alt"
+action = "Quit"
 
 [[keyboard.bindings]]
-action = "ToggleFullscreen"
 key = "Return"
 mods = "Alt"
+action = "ToggleFullscreen"
 
 [[keyboard.bindings]]
-action = "IncreaseFontSize"
 key = "Plus"
 mods = "Control"
+action = "IncreaseFontSize"
 
 [[keyboard.bindings]]
-action = "DecreaseFontSize"
 key = "Minus"
 mods = "Control"
+action = "DecreaseFontSize"
 
 [[keyboard.bindings]]
-action = "ResetFontSize"
 key = "Key0"
 mods = "Control"
+action = "ResetFontSize"
 
-[shell]
-program = 'C:\Program Files\PowerShell\7\pwsh.exe'
-
+# Configuración de la ventana
 [window.padding]
-x = 5
+x = 4
 y = 0
+
+# Configuración del ratón
+[mouse]
+hide_when_typing = false
+
+# Configuración de selección
+[selection]
+save_to_clipboard = true
+
+# Configuración de cursor
+[cursor]
+blink_interval = 750
+
+[cursor.style]
+shape = "Block"
+blinking = "On"
